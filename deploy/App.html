@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TrialByRallyCoach</title>
+
+    <script type="text/javascript" src="/apps/2.0rc1/sdk.js"></script>
+
+    <script type="text/javascript">
+        Rally.onReady(function () {
+                Ext.define("CustomApp",{extend:"Rally.app.App",componentCls:"app",launch:function(){this._doLayout()},_doLayout:function(){var tipCountText=Ext.create("Ext.Component",{html:"3 Tips",cls:"enlarged-number"}),tipExtraText=Ext.create("Ext.Component",{html:"for Rally Trial Greatness!",cls:"subtitle"}),accordianPanel=Ext.create("Ext.panel.Panel",{layout:{type:"accordion",animate:!0,collapseFirst:"true"},items:[{title:"<div class='content'>tip 1</div>",html:"<div class='content'>this is tip 1<br/>and this is how it works"},{title:"<div class='content'>tip 2</div>",html:"<div class='content'>this is tip 2<br/>and this is how it works"},{title:"<div class='content'>tip 3</div>",html:"<div class='content'>this is tip 3<br/>and this is how it works"}]});this.add(tipCountText),this.add(tipExtraText),this.add(accordianPanel)}});
+
+            Rally.launchApp('CustomApp', {
+                name:"TrialByRallyCoach",
+	            parentRepos:""
+            });
+
+        });
+    </script>
+
+
+    <style type="text/css">
+        .app {
+     /* Add app styles here */
+}
+
+.enlarged-number {
+    font-size: 5.0em;
+    font-family: 'Carter One', cursive;
+    font-family: 'Leckerli One', cursive
+    font-weight: bold;
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 2.0em;
+    margin: 10px;
+    text-align: center;
+}
+.content {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+    </style>
+</head>
+<body></body>
+</html>

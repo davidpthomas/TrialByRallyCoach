@@ -1,0 +1,22 @@
+.app {
+     /* Add app styles here */
+}
+
+.enlarged-number {
+    font-size: 5.0em;
+    font-family: 'Carter One', cursive;
+    font-family: 'Leckerli One', cursive
+    font-weight: bold;
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 2.0em;
+    margin: 10px;
+    text-align: center;
+}
+.content {
+    font-size: 1.5em;
+    margin: 10px;
+}
